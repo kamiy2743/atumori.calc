@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+  <head>
+      <html>
+      <meta charset="utf-8">
+    <title>あつ森カブ計算</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <P>あつ森　カブ売り上げ計算</p>
+      </div>
+    </header>
+
+
+    <div class="main">
+      <div class="explanation">
+        <p></p>
+      </div>
+      <div class="content content01">
+        <div class="form">
+          <p class="text">買値<span>(必須)</span></p>
+          <input class="buying01 in" type="text">
+        </div>
+        <span class="mark">×</span>
+        <div class="form">
+          <p class="text">購入数<span>(必須)</span></p>
+          <input class="buy01 in" type="text">
+        </div>
+        <span class="mark">=</span>
+        <div class="form">
+          <p class="text">投資額</p>
+          <input class="long-form invest01" type="text" readonly>
+        </div>
+      </div>
+        <div class="content">
+          <div class="form">
+            <p class="text">売値</p>
+            <input class="selling02 in" type="text">
+          </div>
+          <span class="mark">×</span>
+          <div class="form">
+            <p class="text">購入数</p>
+            <input class="buy02" type="text" readonly>
+          </div>
+          <span class="mark">=</span>
+          <div class="form">
+            <p class="text">売上金額</p>
+            <input class="long-form02 sum02" type="text" readonly>
+          </div>
+        </div>
+
+        <div class="content content02">
+          <div class="form">
+            <p class="text"></p>
+            <input class="null-input" type="text">
+          </div>
+          <span class="mark null-mark">+</span>
+          <div class="form">
+            <p class="text"></p>
+            <input class="null-input" type="text">
+          </div>
+          <span class="mark null-mark">+</span>
+          <div class="form">
+            <p class="text">利益</p>
+            <input class="long-form02 profit02" type="text" readonly>
+          </div>
+        </div>
+
+        <div class="content content03">
+          <div class="form">
+            <p class="text">目標金額(利益)</p>
+            <input class="long-form02 target03 in" type="text">
+          </div>
+          <i class="fas fa-long-arrow-alt-right"></i>
+          <div class="form">
+            <p class="text">最低売値</p>
+            <input class="selling03" type="text" readonly>
+          </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
