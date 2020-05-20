@@ -18,7 +18,11 @@ var $change = $(".buying01,.buy01,.selling02,.target03")
     var target03 = parseInt( $(".target03").val() );
 
     var result = Math.round((invest01 + target03) / buy01);
-    $(".selling03").val(result);
+    if (isNaN(result)) {
+      $(".selling03").val(0);
+    } else {
+      $(".selling03").val(result);
+    }
   });
 
 });
